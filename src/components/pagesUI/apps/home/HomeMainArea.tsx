@@ -4,6 +4,7 @@ import DashboardDetailsCards from "./DashboardDetailsCards";
 import MonthlyTargetCard from "./MonthlyTargetCard";
 import StatisticsChart from "./StatisticsChart";
 import CustomersDemographic from "./CustomerDemographic";
+import RecentOrders from "./RecentOrders";
 // import AnnouncementTable from "./AnnouncementTable";
 
 const HomeMainArea = () => {
@@ -17,6 +18,7 @@ const HomeMainArea = () => {
             <MonthlyTargetCard />
             <StatisticsChart />
             <CustomersDemographic />
+            <RecentOrders />
           </div>
         </div>
       </div>

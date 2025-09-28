@@ -8,6 +8,12 @@
 	@apply text-body;
 }
 
+.order-table{
+	p{
+		@apply mb-0;
+	}
+}
+
 .table.table-bordered {
 	@apply border border-borderLightest dark:border-borderLightest-dark;
 }
@@ -125,6 +131,7 @@
 .table thead th {
 	@apply bg-bgLightest dark:bg-bgLightest-dark;
 }
+
 
 .table>thead>tr th {
 	@apply text-label dark:text-label-dark text-[14px] font-medium text-start;

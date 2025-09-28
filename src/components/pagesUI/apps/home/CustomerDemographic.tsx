@@ -6,8 +6,8 @@ import { MoreVertical } from "lucide-react";
 
 export default function CustomersDemographic() {
   return (
-    <div className="col-span-12 sm:col-span-7 xxl:col-span-7">
-        <div className="card__wrapper bg-white shadow-sm rounded-2xl p-6 w-full max-w-md">
+    <div className="col-span-12 sm:col-span-5 xxl:col-span-5">
+        <div className="card__wrapper bg-white rounded-2xl p-6 w-full max-w-md">
         {/* Header */}
             <div className="flex items-start justify-between mb-4">
                 <div>
@@ -28,8 +28,8 @@ export default function CustomersDemographic() {
                 <Image
                 src={WorldImg}
                 alt="World Map"
-                width={600}
-                height={300}
+                width={320}
+                height={170}
                 className="opacity-80"
                 />
             </div>
