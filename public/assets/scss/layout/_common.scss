@@ -1,5 +1,9 @@
 @use '../utils' as *;
 
+.container{
+    @apply xxl:max-w-[1100px] w-full m-auto;
+}
+
 .timeline {
     &__item {
         @apply relative;
@@ -114,7 +118,10 @@
 }
 
 .price-increase {
-    @apply text-success font-semibold text-xs leading-none mb-[3px];
+    @apply text-success bg-success/10 px-2 py-[5px] rounded-[16px] font-normal text-[14px] leading-none mb-[3px];
+    i{
+        @apply text-[12px];
+    }
 }
 
 .price-down {
@@ -122,7 +129,10 @@
 }
 
 .price-decrease {
-    @apply font-semibold text-xs leading-none text-danger;
+    @apply font-normal text-[14px] leading-none text-danger bg-danger/10 px-2 py-[5px] rounded-[16px];
+    i{
+        @apply text-[12px];
+    }
 }
 
 .dot {

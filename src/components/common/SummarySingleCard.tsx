@@ -1,25 +1,23 @@
 import React from "react";
 
 interface CardProps {
-  iconClass: string; // Font Awesome icon class
-  title: string; // Title of the card
-  value: string | number; // Main value to display
-  description?: string; // Optional description
-  percentageChange?: string; // Optional percentage change info
-  isIncrease?: boolean; // Indicates if the change is positive or negative
+  iconClass: string; 
+  title: string; 
+  value: string | number; 
+  percentageChange?: string;
+  isIncrease?: boolean;
 }
 
 const SummarySingleCard: React.FC<CardProps> = ({
   iconClass,
   title,
   value,
-  description,
   percentageChange,
   isIncrease,
 }) => {
   return (
-    <div className="card__wrapper">
-      <div className="flex items-center gap-[30px] maxSm:gap-5">
+    <div className="card__wrapper style-five">
+      <div className="flex flex-col gap-[20px] maxSm:gap-4">
         <div className="card__icon">
           <span>
             <i className={iconClass}></i>
@@ -27,10 +25,9 @@ const SummarySingleCard: React.FC<CardProps> = ({
         </div>
         <div className="card__title-wrap">
           <h6 className="card__sub-title mb-[10px]">{title}</h6>
-          <div className="flex flex-wrap items-end gap-[10px]">
+          <div className="flex flex-wrap justify-between items-end gap-[10px]">
             <h3 className="card__title mb-0">{value}</h3>
-            {description && (
-              <span className="card__desc style_two">
+            <span className="card__desc style_two">
                 {percentageChange && (
                   <span
                     className={`price-${isIncrease ? "increase" : "decrease"}`}
@@ -43,9 +40,7 @@ const SummarySingleCard: React.FC<CardProps> = ({
                     {percentageChange}
                   </span>
                 )}{" "}
-                {description}
               </span>
-            )}
           </div>
         </div>
       </div>
