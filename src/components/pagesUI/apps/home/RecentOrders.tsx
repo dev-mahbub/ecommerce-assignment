@@ -93,8 +93,8 @@ export default function RecentOrders() {
                   <Image
                     src={order.image}
                     alt={order.product}
-                    width={40}
-                    height={40}
+                    width={50}
+                    height={50}
                     className="rounded-md object-cover"
                   />
                   <div>
