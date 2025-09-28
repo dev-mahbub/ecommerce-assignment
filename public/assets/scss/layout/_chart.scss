@@ -4,6 +4,10 @@
 /*  CHART CSS START
 /*----------------------------------------*/
 
+.target-chart{
+	@apply bg-transparent;
+}
+
 .card__chart {
 	@apply pr-2.5 -ml-2.5;
 }

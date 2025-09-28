@@ -4,14 +4,14 @@ import React from "react"; // Adjust the import path as needed
 const DashboardDetailsCards = () => {
   const cardsData = [
     {
-      iconClass: "fa-sharp fa-regular fa-user",
+      iconClass: "fa-sharp fa-regular fa-users",
       title: "Customers",
       value: "3,782",
       percentageChange: "+10%",
       isIncrease: true,
     },
     {
-      iconClass: "fa-sharp fa-regular fa-house-person-leave",
+      iconClass: "fa-sharp fa-regular fa-box",
       title: "Orders",
       value:"5,359",
       percentageChange: "+2.15%",

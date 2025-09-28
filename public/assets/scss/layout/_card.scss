@@ -210,7 +210,7 @@
 
   &__wrapper {
     @apply relative min-h-[calc(100%_-_20px)] p-[15px] xs:p-[24px] rounded-[16px];
-    @apply bg-card dark:bg-card-dark border border-border dark:border-border-dark dark:shadow-none;
+    @apply bg-card dark:bg-card-dark border mb-6 border-border dark:border-border-dark dark:shadow-none;
 
 
     &.no-height {
