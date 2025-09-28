@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import dynamic from "next/dynamic";
+import { MoreVertical } from "lucide-react";
 
 const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
@@ -48,40 +49,60 @@ const MonthlyTargetCard = () => {
 
   return (
      <div className="col-span-12 sm:col-span-5 xxl:col-span-5">
-        <div className="card__wrapper rounded-2xl w-full border border-border dark:border-border-dark p-6">
-            <h2 className="text-heading font-semibold text-lg">Monthly Target</h2>
-            <p className="text-gray-500 text-sm mt-1">Target you’ve set for each month</p>
-
-            <div className="flex justify-center items-center my-6">
-                <div className="w-[420px] relative">
-                <Chart options={chartOptions} series={chartSeries} type="radialBar" />
-                  <span className="absolute top-[78%] left-[50%] -translate-x-2/4 bg-green-100 text-green-600 text-xs font-medium px-2 py-1 rounded-full">
-                  +10%
-                  </span>
-                </div>
+        <div className="card__wrapper style-target rounded-2xl w-full border border-border dark:border-border-dark p-6">
+            <div className="bg-white dark:bg-white/10 p-6 rounded-xl">
+            <div className="flex justify-between items-start">
+              <div>
+                <h2 className="text-heading font-semibold text-lg">Monthly Target</h2>
+                <p className="text-gray-500 text-sm mt-1">Target you’ve set for each month</p>
+              </div>
+              {/* Menu */}
+              <button className="hover:bg-gray-100 p-2 rounded-full">
+                <MoreVertical className="w-5 h-5 text-gray-500" />
+              </button>
             </div>
 
-            {/* Percentage & Status */}
-            <div className="text-center">
-                <p className="text-base mt-2">
-                You earn $3287 today, it’s higher than last month.
-                <p className="inline-block">Keep up your good work!</p>
-                </p>
+              <div className="flex justify-center items-center my-6">
+                  <div className="w-[420px] relative">
+                  <Chart options={chartOptions} series={chartSeries} type="radialBar" />
+                    <span className="absolute top-[78%] left-[50%] -translate-x-2/4 bg-green-100 text-green-600 text-xs font-medium px-2 py-1 rounded-full">
+                    +10%
+                    </span>
+                  </div>
+              </div>
+
+              {/* Percentage & Status */}
+              <div className="text-center">
+                  <p className="text-base mt-2">
+                  You earn $3287 today, it’s higher than last month.
+                  <span className="inline-block">Keep up your good work!</span>
+                  </p>
+              </div>
             </div>
 
             {/* Bottom Stats */}
-            <div className="grid grid-cols-3 gap-4 mt-4 pt-4 text-center text-sm">
+            <div className="grid grid-cols-3 gap-4 mt-4 pt-4 text-center">
                 <div>
                 <p className="text-gray-500">Target</p>
-                <p className="font-semibold">$20K</p>
+                <p className="text-[18px] text-headingPrimary font-semibold">
+                  $20K
+                  <i className="fa-regular fa-arrow-down text-[16px] ml-[5px]"></i>
+                </p>
                 </div>
                 <div>
                 <p className="text-gray-500">Revenue</p>
-                <p className="font-semibold">$16K</p>
+                <p className="text-[18px] text-headingPrimary font-semibold">
+                  $16K
+                  <i className="fa-regular fa-arrow-up text-[16px] ml-[5px]"></i>
+                  </p>
                 </div>
                 <div>
                 <p className="text-gray-500">Today</p>
-                <p className="font-semibold">$1.5K</p>
+                <p className="text-[18px] text-headingPrimary font-semibold">
+                  $1.5K
+                  <i className="fa-regular fa-arrow-up text-[16px] ml-[5px]"></i>
+                  </p>
+                
                 </div>
             </div>
         </div>

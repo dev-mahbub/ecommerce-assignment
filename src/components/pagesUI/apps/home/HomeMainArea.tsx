@@ -1,11 +1,9 @@
 "use client";
 import React from "react";
-import MettingSchedule from "./MettingSchedule";
-import OrderOverview from "./OrderOverview";
-import CustomerSatisfaction from "./CustomerSatisfaction";
-import UserActivity from "./UserActivity";
 import DashboardDetailsCards from "./DashboardDetailsCards";
 import MonthlyTargetCard from "./MonthlyTargetCard";
+import StatisticsChart from "./StatisticsChart";
+import CustomersDemographic from "./CustomerDemographic";
 // import AnnouncementTable from "./AnnouncementTable";
 
 const HomeMainArea = () => {
@@ -16,12 +14,9 @@ const HomeMainArea = () => {
         <div className="app__slide-wrapper">
           <div className="grid grid-cols-12 gap-x-6 maxXs:gap-x-0">
             <DashboardDetailsCards />
-             <MonthlyTargetCard />
-            <MettingSchedule />
-            <OrderOverview />
-            <CustomerSatisfaction />
-            <UserActivity />
-            {/* <AnnouncementTable /> */}
+            <MonthlyTargetCard />
+            <StatisticsChart />
+            <CustomersDemographic />
           </div>
         </div>
       </div>

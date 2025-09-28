@@ -60,7 +60,7 @@ const TableWithoutCheckbox = () => {
             <i className="icon-ListBullets"></i> Table without Checkbox
           </h3>
         </div>
-        <div className="manaz-common-mat-list mat-list-without-checkbox w-full table__wrapper">
+        <div className="common-mat-list mat-list-without-checkbox w-full table__wrapper">
           <TableControls
             rowsPerPage={rowsPerPage}
             searchQuery={searchQuery}
@@ -237,7 +237,7 @@ const TableWithoutCheckbox = () => {
               onChange={(e, value) => handleChangePage(value)}
               variant="outlined"
               shape="rounded"
-              className="manaz-pagination-button"
+              className="pagination-button"
             />
           </Box>
         </div>

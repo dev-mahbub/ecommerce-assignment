@@ -60,10 +60,10 @@
   &__icon {
     span {
       @apply text-headingPrimary dark:text-primary-dark;
-      @apply bg-body/10 w-[48px] h-[48px] flex text-center justify-center items-center text-[24px] rounded-[12px];
+      @apply bg-borderLight dark:bg-borderLight/10 w-[48px] h-[48px] flex text-center justify-center items-center text-[24px] rounded-[12px];
       
       i{
-        @apply text-base;
+        @apply text-[18px];
       }
     }
 
@@ -212,6 +212,12 @@
     @apply relative min-h-[calc(100%_-_20px)] p-[15px] xs:p-[24px] rounded-[16px];
     @apply bg-card dark:bg-card-dark border mb-6 border-border dark:border-border-dark dark:shadow-none;
 
+    &.style-target{
+      @apply bg-borderLight dark:bg-card-dark p-0 overflow-hidden;
+      p{
+        @apply mb-2;
+      }
+    }
 
     &.no-height {
       @apply min-h-0;

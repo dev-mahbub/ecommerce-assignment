@@ -59,7 +59,7 @@
 //     <>
 //       <div className="col-span-12">
 //         <div className="card__wrapper">
-//           <div className="manaz-common-mat-list w-full table__wrapper table-responsive">
+//           <div className="common-mat-list w-full table__wrapper table-responsive">
 //             <TableControls
 //               rowsPerPage={rowsPerPage}
 //               searchQuery={searchQuery}
@@ -266,7 +266,7 @@
 //                 onChange={(e, value) => handleChangePage(value)}
 //                 variant="outlined"
 //                 shape="rounded"
-//                 className="manaz-pagination-button"
+//                 className="pagination-button"
 //               />
 //             </Box>
 //           </div>

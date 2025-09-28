@@ -51,7 +51,7 @@ const AttendanceTable = () => {
                     </h3>
                 </div>
                 <AttendanceTypeIcons />
-                <div className="manaz-common-mat-list mat-list-without-checkbox w-full table__wrapper">
+                <div className="common-mat-list mat-list-without-checkbox w-full table__wrapper">
                     <TableControls
                         rowsPerPage={rowsPerPage}
                         searchQuery={searchQuery}
@@ -163,7 +163,7 @@ const AttendanceTable = () => {
                             onChange={(e, value) => handleChangePage(value)}
                             variant="outlined"
                             shape="rounded"
-                            className="manaz-pagination-button"
+                            className="pagination-button"
                         />
                     </Box>
                 </div>

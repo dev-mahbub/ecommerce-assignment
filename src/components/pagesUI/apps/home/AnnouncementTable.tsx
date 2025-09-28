@@ -66,7 +66,7 @@
 //       <div className="col-span-12">
 //         <div className="card__wrapper">
 //           <h5 className="card__heading-title mb-[20px]">Announcement</h5>
-//           <div className="manaz-common-mat-list w-full table__wrapper table-responsive">
+//           <div className="common-mat-list w-full table__wrapper table-responsive">
 //             <TableControls
 //               rowsPerPage={rowsPerPage}
 //               searchQuery={searchQuery}
@@ -149,7 +149,7 @@
 //                 onChange={(e, value) => handleChangePage(value)}
 //                 variant="outlined"
 //                 shape="rounded"
-//                 className="manaz-pagination-button"
+//                 className="pagination-button"
 //               />
 //             </Box>
 //           </div>

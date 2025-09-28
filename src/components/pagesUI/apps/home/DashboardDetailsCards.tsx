@@ -1,5 +1,6 @@
 import SummarySingleCard from "@/components/common/SummarySingleCard";
 import React from "react"; // Adjust the import path as needed
+import MonthlySalesCard from "./MonthlySalesCard";
 
 const DashboardDetailsCards = () => {
   const cardsData = [
@@ -29,6 +30,7 @@ const DashboardDetailsCards = () => {
             </div>
         ))}
       </div>
+      <MonthlySalesCard />
     </div>
     </>
   );

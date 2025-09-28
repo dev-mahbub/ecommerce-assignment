@@ -28,7 +28,7 @@ const TableControls: React.FC<TableControlsProps> = ({
           onChange={(e) => handleChangeRowsPerPage(+e.target.value)}
           size="small"
           sx={{ width: 100 }}
-          className="manaz-table-row-per-page"
+          className="table-row-per-page"
         >
           {rowsPerPageOptions.map((option) => (
             <MenuItem key={option} value={option} className="menu-item">
@@ -46,7 +46,7 @@ const TableControls: React.FC<TableControlsProps> = ({
           value={searchQuery}
           onChange={(e) => handleSearchChange(e.target.value)}
           size="small"
-          className="manaz-table-search-input"
+          className="table-search-input"
         />
       </div>
     </Box>

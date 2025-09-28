@@ -152,7 +152,7 @@ table.dataTable.display>tbody>tr.selected:hover>* {
 }
 
 //material table style start
-.manaz-common-mat-list {
+.common-mat-list {
 	@apply mt-0;
 
 	.MuiPaper-root {
@@ -215,7 +215,7 @@ table.dataTable.display>tbody>tr.selected:hover>* {
 }
 
 //table data search style
-.manaz-table-search-input {
+.table-search-input {
 	&.MuiTextField-root {
 		@apply max-w-[180px] w-[100%];
 	}
@@ -238,7 +238,7 @@ table.dataTable.display>tbody>tr.selected:hover>* {
 }
 
 //table row per page style
-.manaz-table-row-per-page {
+.table-row-per-page {
 	&.MuiInputBase-sizeSmall {
 		@apply max-w-[120px] w-full pl-[15px] pr-[5px] py-[6px] text-body dark:text-body-dark  border-0 dark:border-primary;
 	}
@@ -282,7 +282,7 @@ div.MuiFormControl-root .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline 
 }
 
 //table paginaiton button 
-.manaz-pagination-button {
+.pagination-button {
 	.MuiPaginationItem-root {
 		@apply border border-primary text-primary px-[24px] py-[6px];
 	}
