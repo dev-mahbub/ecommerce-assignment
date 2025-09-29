@@ -1,18 +1,18 @@
 import Wrapper from "@/components/layouts/DefaultWrapper";
-import CompaniesMainArea from "@/components/pagesUI/company/companies/CompaniesMainArea";
+import ProductsMainArea from "@/components/products/ProductsMainArea";
 import MetaData from "@/hooks/useMetaData";
 import React from "react";
 
-const CompanyMain= () => {
+const ProductsMain = () => {
   return (
     <>
-      <MetaData pageTitle="Company">
+      <MetaData pageTitle="Products">
         <Wrapper>
-          <CompaniesMainArea/>
+          <ProductsMainArea />
         </Wrapper>
       </MetaData>
     </>
   );
 };
 
-export default CompanyMain;
+export default ProductsMain;

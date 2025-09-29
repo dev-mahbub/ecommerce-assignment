@@ -15,7 +15,7 @@ const sidebarData: SidebarCategory[] = [
         id: 2,
         label: "Products",
         icon: "fa-light fa-box",
-        link: "/company/companies",
+        link: "/products/",
       },
     ],
   },
