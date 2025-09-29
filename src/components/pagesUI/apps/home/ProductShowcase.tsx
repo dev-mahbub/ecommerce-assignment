@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 import slidesData from '@/data/hero-slider-data';
 
 // import required modules
-import { Pagination } from 'swiper';
+import { Pagination, Autoplay  } from 'swiper';
 
 const ProductShowcase = () => {
   
@@ -29,7 +29,11 @@ const ProductShowcase = () => {
                 pagination={{
                   clickable: true,
                 }}
-                modules={[Pagination]}
+                autoplay={{
+                  delay: 2500, // time between slides (ms)
+                  disableOnInteraction: false, // continue autoplay after user interaction
+                }}
+                modules={[Pagination, Autoplay]}
                 className="mySwiper h-full"
               >
                 {slidesData.map((slide, index) => (
