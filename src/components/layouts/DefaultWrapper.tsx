@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import BackToTop from "@/common/BackToTop/BackToTop";
 import Preloader from "@/common/Preloader/Preloader";
 import DashboardFooter from "./footer/FooterOne";
 import DashboardHeader from "./header/DashboardHeader";
@@ -46,6 +47,7 @@ const Wrapper: React.FC<WrapperProps> = ({ children }) => {
             <Preloader />
           ) : (
             <>
+              <BackToTop />
               {renderHeader()}
               {children}
               {renderFooter()}

@@ -1,11 +1,7 @@
-import Link from 'next/link';
 import React from 'react';
 
-const DashboardFooter = () => {
-  // Function to get the current year
-  const getCurrentYear = () => {
-    return new Date().getFullYear();
-  };
+const FooterOne = () => {
+
 
   return (
     <>
@@ -14,7 +10,7 @@ const DashboardFooter = () => {
         <div className="grid grid-cols-12">
           <div className="col-span-12 xl:col-span-12">
             <div className="card__footer flex justify-center">
-            
+              home footer
             </div>
           </div>
         </div>
@@ -24,4 +20,4 @@ const DashboardFooter = () => {
   );
 };
 
-export default DashboardFooter;
+export default FooterOne;

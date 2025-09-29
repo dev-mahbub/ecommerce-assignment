@@ -24,7 +24,7 @@ const ProductsMainArea = () => {
   };
 
   return (
-    <div className='container p-6'>
+    <div className='container-dashboard p-6'>
       <div className="card__wrapper bg-white">
       {/* Header */}
       <div className="pb-4 border-b border-gray-200">

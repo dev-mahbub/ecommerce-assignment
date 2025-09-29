@@ -1,14 +1,14 @@
 import Wrapper from "@/components/layouts/DefaultWrapper";
-import HomeMainArea from "@/components/pagesUI/apps/home/HomeMainArea";
+import DashboardMainArea from "@/components/pagesUI/apps/dashboard/DashboardMainArea";
 import MetaData from "@/hooks/useMetaData";
 import React from "react";
 
 const HrmDashboardMain = () => {
   return (
     <>
-      <MetaData pageTitle="HRM Dashboard">
+      <MetaData pageTitle="Dashboard">
         <Wrapper>
-          <HomeMainArea />
+          <DashboardMainArea />
         </Wrapper>
       </MetaData>
     </>
