@@ -5,6 +5,7 @@ import ProductShowcase from './ProductShowcase';
 import ShopByCategory from './ShopByCategory';
 import HandpickedHighlights from './HandPickedHighlight';
 import Testimonials from './Testimonials';
+import PromoBanner from './PromoBanner';
 
 const HomeMainArea = () => {
     return (
@@ -15,6 +16,7 @@ const HomeMainArea = () => {
             <ShopByCategory />
             <HandpickedHighlights />
             <Testimonials />
+            <PromoBanner />
         </>
     );
 };
