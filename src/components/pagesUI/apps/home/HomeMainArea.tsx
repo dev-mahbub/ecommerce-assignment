@@ -3,6 +3,7 @@ import HomeTopHeader from '@/components/layouts/header/HomeTopHeader';
 import React from 'react';
 import ProductShowcase from './ProductShowcase';
 import ShopByCategory from './ShopByCategory';
+import HandpickedHighlights from './HandPickedHighlight';
 
 const HomeMainArea = () => {
     return (
@@ -11,6 +12,7 @@ const HomeMainArea = () => {
             <HomeHeader />
             <ProductShowcase />
             <ShopByCategory />
+            <HandpickedHighlights />
         </>
     );
 };
