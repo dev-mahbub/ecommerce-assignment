@@ -4,6 +4,7 @@ import React from 'react';
 import ProductShowcase from './ProductShowcase';
 import ShopByCategory from './ShopByCategory';
 import HandpickedHighlights from './HandPickedHighlight';
+import Testimonials from './Testimonials';
 
 const HomeMainArea = () => {
     return (
@@ -13,6 +14,7 @@ const HomeMainArea = () => {
             <ProductShowcase />
             <ShopByCategory />
             <HandpickedHighlights />
+            <Testimonials />
         </>
     );
 };
