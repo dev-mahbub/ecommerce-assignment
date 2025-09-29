@@ -1,6 +1,5 @@
 'use client'
 import React, { useState } from 'react';
-import { ChevronDown, Search, User, Heart, ShoppingCart } from 'lucide-react';
 import UsImg from '../../../../public/assets/images/map/america.svg';
 import Image from 'next/image';
 import Link from 'next/link';

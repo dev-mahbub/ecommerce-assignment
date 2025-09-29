@@ -99,6 +99,10 @@ module.exports = {
           DEFAULT: "#FFFFFF", // light mode use
           dark: "#1F2937", // dark mode
         },
+        cardLight:{
+          DEFAULT:"#F3F4F7",
+          dark: "#F3F4F7"
+        },
         light: {
           DEFAULT: "#B8B8B8", // light mode
           dark: "#6B7280", // dark mode
@@ -112,8 +116,8 @@ module.exports = {
           dark: "#E5E7EB", // dark mode
         },
         dark: {
-          DEFAULT: "#2E2E2E", // light mode
-          dark: "#F9FAFB", // dark mode
+          DEFAULT: "#111827", // light mode use
+          dark: "#111827", // dark mode
         },
         black: {
           DEFAULT: "#362a2a", // light mode
