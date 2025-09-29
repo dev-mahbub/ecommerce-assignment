@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 import slidesData from '@/data/hero-slider-data';
 
 // import required modules
-// import { Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper';
 
 const ProductShowcase = () => {
   
@@ -23,12 +23,13 @@ const ProductShowcase = () => {
         <div className="grid grid-cols-12 gap-6">
           {/* Main Product Slider */}
           <div className="col-span-12 lg:col-span-8 xxl:col-span-6">
-            <div className="relative overflow-hidden rounded-2xl h-[544px]">
+            <div className="hero-slider relative overflow-hidden rounded-2xl h-[544px]">
               <Swiper
+                spaceBetween={30}
                 pagination={{
-                  dynamicBullets: true,
+                  clickable: true,
                 }}
-                // modules={[Pagination]}
+                modules={[Pagination]}
                 className="mySwiper h-full"
               >
                 {slidesData.map((slide, index) => (

@@ -1,0 +1,13 @@
+@use '../utils' as *;
+
+.hero-slider{
+    @apply bg-white;
+    .swiper{
+        .swiper-pagination-bullet{
+            background: white;
+            width: 20px;
+            border-radius: 4px;
+            height: 4px;
+        }
+    }
+}
