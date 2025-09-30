@@ -5,11 +5,11 @@ import BannerImgTwo from '../../../../../public/assets/images/promo-banner/banne
 
 const PromoBanner = () => {
   return (
-    <div className="p-[44px] bg-white">
+    <div className="p-[16px] lg:p-[44px] bg-white">
       <div className="">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
           {/* Left Image */}
-          <div className="w-[590px] h-[470px] rounded-xl overflow-hidden shadow-sm">
+          <div className="min-w-[328px] w-full lg:w-[590px] h-[470px] rounded-xl overflow-hidden shadow-sm">
                 <Image
                     src={BannerImgOne}
                     alt="Light blue handbag"
@@ -31,7 +31,7 @@ const PromoBanner = () => {
           </div>
 
           {/* Right Image */}
-          <div className="w-[590px] h-[470px] rounded-xl overflow-hidden shadow-sm">
+          <div className="min-w-[328px] w-full lg:w-[590px] h-[470px] rounded-xl overflow-hidden shadow-sm">
             <Image
               src={BannerImgTwo}
               alt="Red crocodile leather bag"

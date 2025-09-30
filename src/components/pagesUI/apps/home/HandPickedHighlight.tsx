@@ -24,7 +24,7 @@ const HandpickedHighlights = () => {
                     <Image
                         src={product.image}
                         alt={product.name}
-                        className="w-[283px] h-full object-cover"
+                        className="w-full lg:w-[283px] h-full object-cover"
                     />
                 </div>
                 {product.hot && (

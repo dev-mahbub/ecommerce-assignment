@@ -12,10 +12,10 @@ import WesternImg from '../../../../public/assets/images/footer/westernunion.png
 const HomeFooterBottom = () => {
   return (
     <div className="border-t border-gray-200 bg-white">
-      <div className="container py-6 px-0 flex justify-between items-center text-center">
+      <div className="container py-6 px-0 flex flex-col lg:flex-row justify-between items-center text-center">
         
         {/* Contact */}
-        <div className="col-span-12 md:col-span-6 lg:col-span-2">
+        <div className="col-span-12 md:col-span-6 lg:col-span-2 mb-[40px] lg:mb-0">
             <div className="flex flex-col items-center md:items-start">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-md bg-cardLight flex items-center justify-center">
@@ -32,9 +32,9 @@ const HomeFooterBottom = () => {
         </div>
 
         {/* Download App */}
-        <div className="col-span-12 md:col-span-6 lg:col-span-5">
-            <div className="flex items-center">
-                <div className="flex flex-col items-start mr-8 flex-wrap">
+        <div className="col-span-12 md:col-span-6 lg:col-span-5 mb-[40px] lg:mb-0">
+            <div className="flex flex-col lg:flex-row items-center">
+                <div className="flex flex-col lg:items-start items-center mr-0 lg:mr-8 text-center flex-wrap mb-[20px] lg:mb-0">
                     <p className="text-base font-bold text-headingPrimary mb-0">Download Now on</p>
                     <p className="text-[11px] text-gray-500 mb-0">
                         Free home delivery on your first purchase
@@ -60,7 +60,7 @@ const HomeFooterBottom = () => {
 
         {/* Payment Methods */}
         <div className="col-span-12 md:col-span-6 lg:col-span-5">
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col lg:items-start items-center">
           <p className="text-sm font-medium text-body mb-3">We Support</p>
           <div className="flex gap-4 flex-wrap justi0y-start">
             <Image
@@ -102,11 +102,11 @@ const HomeFooterBottom = () => {
       <div className="border-t border-gray-200">
         <div className="container px-6 md:px-12 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
           <p className="mb-0 text-base">© Copyright 2025 – TailGrids.</p>
-          <div className="flex gap-4 mt-3 md:mt-0 text-base">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 mt-3 md:mt-0 text-base">
             <a href="#" className="hover:text-headingPrimary">Refund Policy</a>
-            <span>|</span>
+            <span className="hidden lg:inline-block">|</span>
             <a href="#" className="hover:text-headingPrimary">Terms of Services</a>
-            <span>|</span>
+            <span className="hidden lg:inline-block">|</span>
             <a href="#" className="hover:text-headingPrimary">Shipping policy</a>
           </div>
         </div>

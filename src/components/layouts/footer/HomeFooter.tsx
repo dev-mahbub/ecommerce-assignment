@@ -76,7 +76,7 @@ export default function HomeFooter() {
           <p className="text-body text-base mb-4">
             Signup for latest news and insights from TailGrids
           </p>
-          <form className="space-y-3 max-w-[300px] md:max-w-[400px] lg:max-w-full w-full ">
+          <form className="space-y-3 max-w-[380px] md:max-w-[400px] lg:max-w-full w-full ">
             <input
               type="email"
               placeholder="Enter your email address"
