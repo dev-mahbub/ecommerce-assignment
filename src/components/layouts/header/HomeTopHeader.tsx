@@ -10,8 +10,8 @@ const HomeTopHeader = () => {
     return (
         <div className='w-full'>
             <div className="bg-gray-900 text-white text-sm">
-        <div className="w-full mx-auto px-[100px]">
-          <div className="flex items-center justify-between h-[50px]">
+        <div className="w-full mx-auto px-[80px] lg:px-[100px]">
+          <div className="flex items-center flex-col justify-center lg:justify-between h-[60px] lg:h-[50px]">
             {/* Left side - Language and Currency */}
             <div className="flex items-center space-x-6">
               {/* Language Selector */}
@@ -38,12 +38,13 @@ const HomeTopHeader = () => {
             </div>
 
             {/* Center - Flash Sale */}
-            <div className="flex-1 text-center">
+            <div className="lg:flex-1 lg:text-center">
               <span className="text-white">Flash Sale Live - 30% Off Everything</span>
             </div>
 
             {/* Right side - Login/Register */}
-            <div className="flex items-center space-x-1">
+            <div className='hidden lg:inline-block'>
+              <div className="flex items-center space-x-1">
               <Link href="auth/signin">
                 <i className='fa-light fa-user text-[12px] mr-1.5'></i>
                 <span>login</span>
@@ -52,6 +53,7 @@ const HomeTopHeader = () => {
               <Link href={"/"}>
                 <span>Register</span>
               </Link>
+            </div>
             </div>
           </div>
         </div>

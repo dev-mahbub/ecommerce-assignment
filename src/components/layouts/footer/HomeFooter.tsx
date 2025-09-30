@@ -16,7 +16,7 @@ export default function HomeFooter() {
               className="h-full"
             />
           </div>
-          <p className="text-body mt-6 text-base leading-relaxed">
+          <p className="text-body mt-6 text-base leading-relaxed max-w-[300px] md:max-w-[400px] lg:max-w-full">
             TailGrids comes with all the essential UI components you need to
             create beautiful websites based on Tailwind CSS.
           </p>
@@ -76,7 +76,7 @@ export default function HomeFooter() {
           <p className="text-body text-base mb-4">
             Signup for latest news and insights from TailGrids
           </p>
-          <form className="space-y-3">
+          <form className="space-y-3 max-w-[300px] md:max-w-[400px] lg:max-w-full w-full ">
             <input
               type="email"
               placeholder="Enter your email address"

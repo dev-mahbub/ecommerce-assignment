@@ -71,7 +71,7 @@ const HomeHeader = () => {
               </button>
 
               {/* Wishlist */}
-              <button className="p-2 text-headingPrimary hover:text-primary relative">
+              <button className="hidden md:inline-block p-2 text-headingPrimary hover:text-primary relative">
                 <Heart className="h-5 w-5" />
                 <span className="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
                   2
@@ -88,14 +88,6 @@ const HomeHeader = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Mobile Menu Button (for responsive design) */}
-      <div className="md:hidden bg-white border-b border-gray-200 px-4 py-2">
-        <button className="w-full flex items-center justify-between text-gray-700 font-medium">
-          <span>Menu</span>
-          <i className='fa-light fa-chevron-down'></i>
-        </button>
       </div>
     </div>
   );

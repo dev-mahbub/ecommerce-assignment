@@ -18,29 +18,29 @@ const ProductShowcase = () => {
   
 
   return (
-    <div className="bg-gray-50 p-20">
+    <div className="bg-gray-50 p-4 lg:p-20">
       <div className="mx-auto">
         <div className="grid grid-cols-12 gap-6">
           {/* Main Product Slider */}
           <div className="col-span-12 lg:col-span-8 xxl:col-span-6">
-            <div className="hero-slider relative overflow-hidden rounded-2xl h-[544px]">
+            <div className="hero-slider relative overflow-hidden rounded-2xl h-[730px] lg:h-[544px]">
               <Swiper
                 spaceBetween={30}
                 pagination={{
                   clickable: true,
                 }}
-                autoplay={{
-                  delay: 2500, // time between slides (ms)
-                  disableOnInteraction: false, // continue autoplay after user interaction
-                }}
+                // autoplay={{
+                //   delay: 2500, // time between slides (ms)
+                //   disableOnInteraction: false, // continue autoplay after user interaction
+                // }}
                 modules={[Pagination, Autoplay]}
                 className="mySwiper h-full"
               >
                 {slidesData.map((slide, index) => (
                   <SwiperSlide key={slide.id}>
                     <div className="bg-dark h-full p-8 lg:p-12 relative rounded-2xl">
-                      <div className="flex items-center justify-between h-full">
-                        <div className="flex-1 z-10">
+                      <div className="flex items-center flex-col lg:flex-row justify-between h-full">
+                        <div className="flex-1 z-10 text-center lg:text-start">
                           <div className="mb-4">
                             <span className="text-gray-400 text-sm uppercase tracking-wide">{slide.brand}</span>
                           </div>
@@ -53,14 +53,14 @@ const ProductShowcase = () => {
                             {slide.description}
                           </p>
                           
-                          <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                          <button className="bg-white mb-[44px] mt-[20px] lg:mt-0 lg:mb-0 w-full lg:w-[160px] text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                             Buy Now {slide.price}
                           </button>
                         </div>
                         
                         {/* Product Image */}
                         <div className="flex-1 flex justify-center items-center">
-                          <div className="relative w-[306px] h-[314px]">
+                          <div className="relative w-[288px] lg:w-[306px] h-[294px] lg:h-[314px]">
                             <Image
                               src={slide.image}
                               alt={slide.title}
