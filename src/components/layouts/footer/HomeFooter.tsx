@@ -3,7 +3,7 @@ import React from "react";
 import logoFooter from '../../../../public/assets/images/logo/logo.png';
 import Image from "next/image";
 
-export default function FooterOne() {
+export default function HomeFooter() {
   return (
     <footer className="py-[110px] bg-cardLight">
       <div className="container grid grid-cols-12 gap-16">
