@@ -1,12 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import BackToTop from "@/common/BackToTop/BackToTop";
 import Preloader from "@/common/Preloader/Preloader";
-import DashboardFooter from "./footer/FooterOne";
 import DashboardHeader from "./header/DashboardHeader";
 import DashBoardSidebar from "./sidebar/DashBoardSidebar";
 import useGlobalContext from "@/hooks/use-context";
+import HomeFooter from "./footer/HomeFooter";
 
 interface WrapperProps {
   children: React.ReactNode;
@@ -31,8 +30,12 @@ const Wrapper: React.FC<WrapperProps> = ({ children }) => {
 
   const renderFooter = () => {
     switch (pathName) {
-      default:
-        return <DashboardFooter />;
+    case "/":
+    case "/home":
+    return <HomeFooter />;
+
+       default:
+        return null;
     }
   };
 
@@ -47,7 +50,6 @@ const Wrapper: React.FC<WrapperProps> = ({ children }) => {
             <Preloader />
           ) : (
             <>
-              <BackToTop />
               {renderHeader()}
               {children}
               {renderFooter()}
