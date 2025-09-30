@@ -3,8 +3,8 @@ import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
-import ImgTwo from '../../../../../public/assets/images/hero/image2.png';
-import ImgThree from '../../../../../public/assets/images/hero/image3.png';
+import ImgTwo from '../../../../../public/assets/images/hero/Image2.png';
+import ImgThree from '../../../../../public/assets/images/hero/Image3.png';
 
 // Import Swiper styles
 import 'swiper/css';
