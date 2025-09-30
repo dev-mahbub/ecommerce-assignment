@@ -1,8 +1,8 @@
-import CatImgOne from '../../public/assets/images/shop-category/Image1.png';
-import CatImgTwo from '../../public/assets/images/shop-category/Image2.png';
-import CatImgThree from '../../public/assets/images/shop-category/Image3.png';
-import CatImgFour from '../../public/assets/images/shop-category/Image4.png';
-import CatImgFive from '../../public/assets/images/shop-category/Image5.png';
+import CatImgOne from '../../public/assets/images/shop-category/image1.png';
+import CatImgTwo from '../../public/assets/images/shop-category/image2.png';
+import CatImgThree from '../../public/assets/images/shop-category/image3.png';
+import CatImgFour from '../../public/assets/images/shop-category/image4.png';
+import CatImgFive from '../../public/assets/images/shop-category/image5.png';
 
  const categoryData = [
     {
