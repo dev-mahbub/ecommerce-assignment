@@ -15,15 +15,15 @@ const Testimonials = () => {
     for (let i = 0; i < 5; i++) {
       if (i < fullStars) {
         stars.push(
-          <i className="fa-solid fa-star text-yellow-400"></i>
+          <i key={i} className="fa-solid fa-star text-yellow-400"></i>
         );
       } else if (i === fullStars && hasHalfStar) {
         stars.push(
-          <i className="fa-solid fa-star-half text-yellow-400"></i>
+          <i key={i} className="fa-solid fa-star-half text-yellow-400"></i>
         );
       } else {
         stars.push(
-          <i className="fa-solid fa-star"></i>
+          <i key={i} className="fa-solid fa-star"></i>
         );
       }
     }

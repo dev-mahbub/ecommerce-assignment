@@ -6,6 +6,7 @@ import ShopByCategory from './ShopByCategory';
 import HandpickedHighlights from './HandPickedHighlight';
 import Testimonials from './Testimonials';
 import PromoBanner from './PromoBanner';
+import FooterOne from '@/components/layouts/footer/FooterOne';
 
 const HomeMainArea = () => {
     return (
@@ -17,6 +18,7 @@ const HomeMainArea = () => {
             <HandpickedHighlights />
             <Testimonials />
             <PromoBanner />
+            <FooterOne />
         </>
     );
 };
