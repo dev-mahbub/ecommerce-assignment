@@ -11,7 +11,7 @@ const HomeTopHeader = () => {
         <div className='w-full'>
             <div className="bg-gray-900 text-white text-sm">
         <div className="w-full mx-auto px-[80px] lg:px-[100px]">
-          <div className="flex items-center flex-col justify-center lg:justify-between h-[60px] lg:h-[50px]">
+          <div className="flex items-center flex-col lg:flex-row justify-center lg:justify-between h-[60px] lg:h-[50px]">
             {/* Left side - Language and Currency */}
             <div className="flex items-center space-x-6">
               {/* Language Selector */}
