@@ -7,6 +7,7 @@ import ChatIcon from '@/svg/header-svg/Profile/ChatIcon';
 import EmailIcon from '@/svg/header-svg/Profile/EmailIcon';
 import AddAccountIcon from '@/svg/header-svg/Profile/AddAccountIcon';
 import LogOut from '@/svg/header-svg/Profile/LogOut';
+import { useRouter } from 'next/navigation';
 //types
 type TUserProps={
     handleShowUserDrowdown:()=>void;
@@ -14,6 +15,21 @@ type TUserProps={
 }
 
 const HeaderUserProfile = ({handleShowUserDrowdown, isOpenUserDropdown}:TUserProps) => {
+
+      const router = useRouter();
+
+  // 🔐 Logout Handler
+  const handleLogout = async () => {
+    try {
+      const res = await fetch('/api/auth/logout', { method: 'POST' });
+      if (res.ok) {
+        router.push('/auth/signin'); // redirect to login
+      }
+    } catch (err) {
+      console.error('Logout failed:', err);
+    }
+  };
+
     return (
         <>
             <div className="nav-item relative">
@@ -55,9 +71,9 @@ const HeaderUserProfile = ({handleShowUserDrowdown, isOpenUserDropdown}:TUserPro
                             </Link>
                         </li>
                         <li>
-                            <Link href="/auth/signin-basic">
-                        <LogOut/>
-                                Log Out</Link>
+                            <button onClick={handleLogout} className='flex items-center gap-2'>
+                                <LogOut/>Log Out
+                            </button>
                         </li>
                     </ul>
                 </div>

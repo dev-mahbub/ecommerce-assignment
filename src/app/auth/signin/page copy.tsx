@@ -1,35 +1,16 @@
 'use client'
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { useRouter } from 'next/navigation';
 
 const SignInBasicMain = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
-    const [error, setError] = useState('');
-    const router = useRouter();
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        setError('');
-
-        try {
-            const res = await fetch('/api/auth/login', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email, password }),
-            });
-
-            if (res.ok) {
-                router.push('/dashboard'); // ✅ redirect after login
-            } else {
-                const data = await res.json();
-                setError(data.message || 'Login failed');
-            }
-        } catch (err) {
-            setError('Something went wrong. Try again.');
-        }
+        // Handle form submission
+        console.log({ email, password, rememberMe });
     };
 
     return (
@@ -43,13 +24,6 @@ const SignInBasicMain = () => {
                                 <h1 className="text-[48px] font-medium text-gray-900 mt-6 mb-3">Welcome back</h1>
                                 <p className="text-gray-600 mb-6">Login to continue your journey with us.</p>
                             </div>
-
-                            {/* ⚠️ Error message */}
-                            {error && (
-                                <p className="text-red-600 text-sm mb-4 text-center">
-                                    {error}
-                                </p>
-                            )}
 
                             {/* Social Login Buttons */}
                             <div className="space-y-3 mb-6">
